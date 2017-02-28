@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dXi-Rw-VHV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="vy4-9H-S2G">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="lLZ-KI-9ui" customClass="MainViewController" customModule="MusicContentApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ezW-t3-WIp"/>
+                        <viewControllerLayoutGuide type="bottom" id="idc-3D-eSi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vqd-sA-I0g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a0s-En-nsg">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="bL5-SV-ofW"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuBarButtonItem" destination="bL5-SV-ofW" id="dLA-od-AVc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZp-Cc-J07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759.20000000000005" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nCh-vD-2gW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dXi-Rw-VHV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4eP-SY-xdr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lLZ-KI-9ui" kind="relationship" relationship="rootViewController" id="WTl-Er-wuM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tb4-HB-sDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="12" height="12"/>
+    </resources>
+</document>

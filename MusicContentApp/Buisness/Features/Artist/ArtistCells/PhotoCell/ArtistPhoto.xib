@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artistPhoto" id="e8N-fd-w6E" customClass="ArtistPhotoCollectionViewCell" customModule="MusicContentApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eps-wz-hN5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEz-kX-CFK">
+                        <rect key="frame" x="0.0" y="270" width="375" height="105"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0v-qf-CsZ">
+                        <rect key="frame" x="10" y="299" width="25" height="23.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="DqN-gx-zbN"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="evz-NM-had"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7u-U3-K0U">
+                        <rect key="frame" x="250" y="304" width="105" height="30"/>
+                        <color key="backgroundColor" red="0.88875406980514526" green="0.99627786874771118" blue="0.13190987706184387" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="KbF-Tc-inD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                        <state key="normal" title="Detail">
+                            <color key="titleColor" red="0.12939286229999999" green="0.12942266459999999" blue="0.12939092520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="showDetail:" destination="e8N-fd-w6E" eventType="touchUpInside" id="Wts-cp-Zqt"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="s0v-qf-CsZ" firstAttribute="leading" secondItem="e8N-fd-w6E" secondAttribute="leading" constant="10" id="5eb-WB-pPm"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="s0v-qf-CsZ" secondAttribute="trailing" constant="2" id="DhT-bR-dRz"/>
+                <constraint firstItem="s0v-qf-CsZ" firstAttribute="top" secondItem="e8N-fd-w6E" secondAttribute="top" constant="299" id="Epm-WY-U9g"/>
+                <constraint firstItem="Eps-wz-hN5" firstAttribute="leading" secondItem="e8N-fd-w6E" secondAttribute="leading" id="FPb-Vq-SEo"/>
+                <constraint firstItem="o7u-U3-K0U" firstAttribute="leading" secondItem="e8N-fd-w6E" secondAttribute="leading" constant="250" id="Zi7-Co-imc"/>
+                <constraint firstItem="Eps-wz-hN5" firstAttribute="top" secondItem="e8N-fd-w6E" secondAttribute="top" id="eqd-jq-st6"/>
+                <constraint firstAttribute="trailing" secondItem="Eps-wz-hN5" secondAttribute="trailing" id="hAW-1I-RrT"/>
+                <constraint firstAttribute="trailing" secondItem="o7u-U3-K0U" secondAttribute="trailing" constant="20" id="ipr-4A-frL"/>
+                <constraint firstAttribute="bottom" secondItem="Eps-wz-hN5" secondAttribute="bottom" id="nWJ-cW-cnd"/>
+                <constraint firstItem="o7u-U3-K0U" firstAttribute="top" secondItem="e8N-fd-w6E" secondAttribute="top" constant="304" id="qad-mv-PvZ"/>
+            </constraints>
+            <connections>
+                <outlet property="artistPictureImageView" destination="Eps-wz-hN5" id="opa-h9-iaX"/>
+                <outlet property="blackGradientView" destination="TEz-kX-CFK" id="Xqn-Kr-elF"/>
+                <outlet property="nameLabel" destination="s0v-qf-CsZ" id="chP-gE-AOV"/>
+                <outlet property="toFavoriteButton" destination="o7u-U3-K0U" id="LBn-sZ-ZjH"/>
+            </connections>
+            <point key="canvasLocation" x="-81.5" y="1.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

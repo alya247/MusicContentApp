@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artistDetTitleCell" id="Xkc-Wb-vgV" customClass="ArtistDetTitleCollectionViewCell" customModule="MusicContentApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYG-Fb-Ww4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Apj-eF-Z55">
+                                <rect key="frame" x="0.0" y="0.0" width="159" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daft Punk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOA-1k-TV4">
+                                <rect key="frame" x="222" y="8" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="sYG-Fb-Ww4" firstAttribute="leading" secondItem="Xkc-Wb-vgV" secondAttribute="leading" id="6NQ-nv-xZZ"/>
+                <constraint firstAttribute="trailing" secondItem="sYG-Fb-Ww4" secondAttribute="trailing" id="aTa-hO-Cp9"/>
+                <constraint firstAttribute="bottom" secondItem="sYG-Fb-Ww4" secondAttribute="bottom" id="r9l-4I-qs6"/>
+                <constraint firstItem="sYG-Fb-Ww4" firstAttribute="top" secondItem="Xkc-Wb-vgV" secondAttribute="top" id="wI0-Q5-mD4"/>
+            </constraints>
+            <connections>
+                <outlet property="artistImageView" destination="Apj-eF-Z55" id="Svh-EU-x7H"/>
+                <outlet property="nameLabel" destination="BOA-1k-TV4" id="vxr-mr-juo"/>
+            </connections>
+            <point key="canvasLocation" x="-188.5" y="69"/>
+        </collectionViewCell>
+    </objects>
+</document>

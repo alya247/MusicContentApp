@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shortBioCell" id="z7n-Rt-FvN" customClass="BioCollectionViewCell" customModule="MusicContentApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEEZER link:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWV-Nm-QBW">
+                        <rect key="frame" x="19" y="14" width="87" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="7ec-1v-Idw"/>
+                            <constraint firstAttribute="width" constant="87" id="kyx-qj-o4I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                        <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://www.deezer.com/artist/27" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH3-Fq-sOB">
+                        <rect key="frame" x="109" y="14" width="202" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="a78-V2-b7S"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="yfS-W2-Vnv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                        <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q1-Tn-Sah">
+                        <rect key="frame" x="19" y="38" width="79" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="Playlists →">
+                            <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="showPlaylists:" destination="z7n-Rt-FvN" eventType="touchUpInside" id="rXa-B1-4c5"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHv-oF-K7F">
+                        <rect key="frame" x="328" y="42" width="22" height="22"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="likeUnselected"/>
+                        <connections>
+                            <action selector="addToFavorite:" destination="z7n-Rt-FvN" eventType="touchUpInside" id="0kk-9v-BSN"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.12939286231994629" green="0.12942266464233398" blue="0.12939092516899109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bH3-Fq-sOB" firstAttribute="leading" secondItem="eWV-Nm-QBW" secondAttribute="trailing" constant="3" id="8H3-LH-tXM"/>
+                <constraint firstItem="eWV-Nm-QBW" firstAttribute="leading" secondItem="z7n-Rt-FvN" secondAttribute="leading" constant="19" id="lIF-Ky-zSW"/>
+                <constraint firstItem="bH3-Fq-sOB" firstAttribute="top" secondItem="z7n-Rt-FvN" secondAttribute="top" constant="14" id="sBx-T1-le7"/>
+                <constraint firstItem="eWV-Nm-QBW" firstAttribute="top" secondItem="z7n-Rt-FvN" secondAttribute="top" constant="14" id="wyB-9K-OQy"/>
+            </constraints>
+            <connections>
+                <outlet property="likeButton" destination="MHv-oF-K7F" id="kb6-F5-ZnA"/>
+                <outlet property="linkLabel" destination="bH3-Fq-sOB" id="eHt-rX-qg6"/>
+            </connections>
+            <point key="canvasLocation" x="75.5" y="56"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="likeUnselected" width="32" height="32"/>
+    </resources>
+</document>

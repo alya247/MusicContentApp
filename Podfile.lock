@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.3.0)
+  - KeychainAccess (3.0.1)
+  - R.swift (3.2.0):
+    - R.swift.Library (~> 3.0.2)
+  - R.swift.Library (3.0.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainAccess
+  - R.swift
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  KeychainAccess: 017ea25e313a49eda10bb19b0bb0760fb1edfe1a
+  R.swift: 207a372a2b5977caef440c696a368009460641d1
+  R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: e862ad1e84676e4b807806a8966a72619b4e1ee8
+
+COCOAPODS: 1.1.1
