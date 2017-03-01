@@ -22,6 +22,8 @@ class ArtistViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        artistCollectionView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
+        
         artistCollectionView.register(R.nib.artistPhoto)
         artistCollectionView.register(R.nib.shortBio)
         artistCollectionView.register(R.nib.artistAlbums)

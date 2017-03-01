@@ -21,16 +21,12 @@ class AuthViewController: UIViewController {
         
         self.webView.loadRequest(request as URLRequest)
     }
-
-
 }
 
 extension AuthViewController: UIWebViewDelegate {
     
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool  {
-        
-        
-        
+ 
         let urlString: String = (request.url?.absoluteString)!
         print("URL STRING : \(urlString) ")
         var UrlParts: [String] = urlString.components(separatedBy: "http://www.example.com/?code=")
@@ -55,9 +51,7 @@ extension AuthViewController: UIWebViewDelegate {
                             print(accessToken)
                             do {
                                 try UserSession.shared.activate(with: accessToken)
-                                //self.present(R.storyboard.artist().instantiateInitialViewController()!, animated: true, completion: nil)
-                                //self.present(R.storyboard.search().instantiateInitialViewController()!, animated: true, completion: nil)
-                                self.present(R.storyboard.mainScreen().instantiateInitialViewController()!,
+                                self.present(R.storyboard.menu().instantiateInitialViewController()!,
                                              animated: true,
                                              completion: nil)
                             }  catch _ {}

@@ -18,6 +18,7 @@ class ArtistPhotoCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var toFavoriteButton: UIButton!
     @IBOutlet weak var blackGradientView: UIView!
+    @IBOutlet weak var fansLabel: UILabel!
     
     weak var delegate: PushViewControllerProtocol?
     
@@ -37,6 +38,10 @@ class ArtistPhotoCollectionViewCell: UICollectionViewCell {
         self.albums = albums
         
         nameLabel.text = artist.name
+        guard let fans = artist.fans as Int! else {
+            return 
+        }
+        fansLabel.text = String(describing: fans) + " fans"
         
         guard let url = artist.pictureBg as URL! else {
             return

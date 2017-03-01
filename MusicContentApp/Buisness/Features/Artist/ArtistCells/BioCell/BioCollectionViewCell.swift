@@ -11,7 +11,6 @@ import UIKit
 class BioCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var likeButton: UIButton!
-    @IBOutlet weak var linkLabel: UILabel!
     
     var isSelectedButton = false
     
@@ -21,11 +20,8 @@ class BioCollectionViewCell: UICollectionViewCell {
     }
     
     func fill(withArtist artist: ArtistModelDeezer) {
-        linkLabel.text = artist.link?.absoluteString
+        //linkLabel.text = artist.link?.absoluteString
         
-    }
-    
-    @IBAction func showPlaylists(_ sender: UIButton) {
     }
     
     @IBAction func addToFavorite(_ sender: UIButton) {

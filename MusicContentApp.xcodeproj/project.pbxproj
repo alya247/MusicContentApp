@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7803AC231D73C32817AF66D1 /* Pods_MusicContentApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504E9119D07D13908F219C0A /* Pods_MusicContentApp.framework */; };
+		FE18D9021E67649C00DB454F /* UIImage + gradientNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE18D9011E67649C00DB454F /* UIImage + gradientNavBar.swift */; };
 		FE6461161E584AE1007984DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6461151E584AE1007984DC /* AppDelegate.swift */; };
 		FE64611D1E584AE1007984DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE64611C1E584AE1007984DC /* Assets.xcassets */; };
 		FE6461201E584AE1007984DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE64611E1E584AE1007984DC /* LaunchScreen.storyboard */; };
@@ -74,6 +75,7 @@
 		150297A655D829E1DBEBC231 /* Pods-MusicContentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicContentApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicContentApp/Pods-MusicContentApp.release.xcconfig"; sourceTree = "<group>"; };
 		504E9119D07D13908F219C0A /* Pods_MusicContentApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicContentApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2988EFD4F6E0714898FE95A /* Pods-MusicContentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicContentApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicContentApp/Pods-MusicContentApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FE18D9011E67649C00DB454F /* UIImage + gradientNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + gradientNavBar.swift"; sourceTree = "<group>"; };
 		FE6461121E584AE1007984DC /* MusicContentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicContentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6461151E584AE1007984DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
 		FE64611C1E584AE1007984DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -437,6 +439,7 @@
 			children = (
 				FEB2B8971E584EEA00D2E27B /* UITextField + Underline.swift */,
 				FE70175E1E5EF43A00548871 /* UIView + Gradient.swift */,
+				FE18D9011E67649C00DB454F /* UIImage + gradientNavBar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -772,6 +775,7 @@
 				FEB2B8AA1E5851D400D2E27B /* AuthViewController.swift in Sources */,
 				FEB2B8AE1E5888D200D2E27B /* BioCollectionViewCell.swift in Sources */,
 				FEC3EDDB1E62BDD900D2C060 /* ArtistViewController + CollectionViewLayout.swift in Sources */,
+				FE18D9021E67649C00DB454F /* UIImage + gradientNavBar.swift in Sources */,
 				FEB2B89D1E584EEA00D2E27B /* ArtistViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,8 @@ extension UINavigationBar {
     
     static func setup() {
         let appearance = UINavigationBar.appearance()
-        
-        appearance.setBackgroundImage(UIImage(), for: .default)
+        appearance.setBackgroundImage(UIImage.gradientNavBar(withFrame: CGRect(x: 0, y: 0,
+                                                                               width: UIScreen.main.bounds.width,
+                                                                               height: 44.0)), for: .default)
     }
 }

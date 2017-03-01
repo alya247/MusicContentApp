@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,25 +22,34 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYG-Fb-Ww4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Apj-eF-Z55">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Apj-eF-Z55">
                                 <rect key="frame" x="0.0" y="0.0" width="159" height="159"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Apj-eF-Z55" secondAttribute="height" multiplier="1:1" id="Slm-bB-Wte"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daft Punk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOA-1k-TV4">
-                                <rect key="frame" x="222" y="8" width="110" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daft Punk" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOA-1k-TV4">
+                                <rect key="frame" x="167" y="14" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BOA-1k-TV4" firstAttribute="top" secondItem="sYG-Fb-Ww4" secondAttribute="top" constant="14" id="AuD-SU-GKa"/>
+                            <constraint firstItem="BOA-1k-TV4" firstAttribute="leading" secondItem="Apj-eF-Z55" secondAttribute="trailing" constant="8" id="Fqf-th-F37"/>
+                            <constraint firstItem="Apj-eF-Z55" firstAttribute="leading" secondItem="sYG-Fb-Ww4" secondAttribute="leading" id="GPQ-Am-2eV"/>
+                            <constraint firstItem="Apj-eF-Z55" firstAttribute="top" secondItem="sYG-Fb-Ww4" secondAttribute="top" id="JnJ-h3-rIv"/>
+                            <constraint firstAttribute="bottom" secondItem="Apj-eF-Z55" secondAttribute="bottom" constant="11" id="qvA-OR-yzU"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="sYG-Fb-Ww4" firstAttribute="leading" secondItem="Xkc-Wb-vgV" secondAttribute="leading" id="6NQ-nv-xZZ"/>
                 <constraint firstAttribute="trailing" secondItem="sYG-Fb-Ww4" secondAttribute="trailing" id="aTa-hO-Cp9"/>
+                <constraint firstAttribute="trailing" secondItem="BOA-1k-TV4" secondAttribute="trailing" constant="8" id="aTw-DR-cWZ"/>
                 <constraint firstAttribute="bottom" secondItem="sYG-Fb-Ww4" secondAttribute="bottom" id="r9l-4I-qs6"/>
                 <constraint firstItem="sYG-Fb-Ww4" firstAttribute="top" secondItem="Xkc-Wb-vgV" secondAttribute="top" id="wI0-Q5-mD4"/>
             </constraints>

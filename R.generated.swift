@@ -53,7 +53,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 5 images.
+  /// This `R.image` struct is generated, and contains static references to 7 images.
   struct image {
     /// Image `likeSelected`.
     static let likeSelected = Rswift.ImageResource(bundle: R.hostingBundle, name: "likeSelected")
@@ -65,6 +65,10 @@ struct R: Rswift.Validatable {
     static let menu = Rswift.ImageResource(bundle: R.hostingBundle, name: "menu")
     /// Image `play`.
     static let play = Rswift.ImageResource(bundle: R.hostingBundle, name: "play")
+    /// Image `playlist`.
+    static let playlist = Rswift.ImageResource(bundle: R.hostingBundle, name: "playlist")
+    /// Image `worldwide`.
+    static let worldwide = Rswift.ImageResource(bundle: R.hostingBundle, name: "worldwide")
     
     /// `UIImage(named: "likeSelected", bundle: ..., traitCollection: ...)`
     static func likeSelected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -89,6 +93,16 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "play", bundle: ..., traitCollection: ...)`
     static func play(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.play, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "playlist", bundle: ..., traitCollection: ...)`
+    static func playlist(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.playlist, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "worldwide", bundle: ..., traitCollection: ...)`
+    static func worldwide(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.worldwide, compatibleWith: traitCollection)
     }
     
     fileprivate init() {}
@@ -474,6 +488,8 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "likeUnselected") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'likeUnselected' is used in nib 'ShortBio', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "playlist") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'playlist' is used in nib 'ShortBio', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "worldwide") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'worldwide' is used in nib 'ShortBio', but couldn't be loaded.") }
       }
       
       fileprivate init() {}

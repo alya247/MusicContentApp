@@ -21,13 +21,22 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eps-wz-hN5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                     </imageView>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEz-kX-CFK">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEz-kX-CFK">
                         <rect key="frame" x="0.0" y="270" width="375" height="105"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFs-Pw-EGl">
+                        <rect key="frame" x="10" y="334" width="35.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="CEH-FU-Ihx"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="EVy-te-5bB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                        <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0v-qf-CsZ">
-                        <rect key="frame" x="10" y="299" width="25" height="23.5"/>
+                        <rect key="frame" x="10" y="300" width="25" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" id="DqN-gx-zbN"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" id="evz-NM-had"/>
@@ -54,20 +63,28 @@
             </view>
             <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="TEz-kX-CFK" firstAttribute="leading" secondItem="Eps-wz-hN5" secondAttribute="trailing" constant="-375" id="2Va-Yl-wuM"/>
                 <constraint firstItem="s0v-qf-CsZ" firstAttribute="leading" secondItem="e8N-fd-w6E" secondAttribute="leading" constant="10" id="5eb-WB-pPm"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="s0v-qf-CsZ" secondAttribute="trailing" constant="2" id="DhT-bR-dRz"/>
-                <constraint firstItem="s0v-qf-CsZ" firstAttribute="top" secondItem="e8N-fd-w6E" secondAttribute="top" constant="299" id="Epm-WY-U9g"/>
+                <constraint firstItem="s0v-qf-CsZ" firstAttribute="top" secondItem="e8N-fd-w6E" secondAttribute="top" constant="300" id="Epm-WY-U9g"/>
                 <constraint firstItem="Eps-wz-hN5" firstAttribute="leading" secondItem="e8N-fd-w6E" secondAttribute="leading" id="FPb-Vq-SEo"/>
+                <constraint firstItem="TEz-kX-CFK" firstAttribute="top" secondItem="e8N-fd-w6E" secondAttribute="top" constant="270" id="UXp-uB-M8O"/>
+                <constraint firstAttribute="bottom" secondItem="TEz-kX-CFK" secondAttribute="bottom" id="YyC-Fm-u3T"/>
                 <constraint firstItem="o7u-U3-K0U" firstAttribute="leading" secondItem="e8N-fd-w6E" secondAttribute="leading" constant="250" id="Zi7-Co-imc"/>
+                <constraint firstItem="RFs-Pw-EGl" firstAttribute="leading" secondItem="e8N-fd-w6E" secondAttribute="leading" constant="10" id="bmd-lx-Akm"/>
+                <constraint firstItem="TEz-kX-CFK" firstAttribute="leading" secondItem="e8N-fd-w6E" secondAttribute="leading" id="ddx-In-qvn"/>
+                <constraint firstAttribute="trailing" secondItem="TEz-kX-CFK" secondAttribute="trailing" id="dhP-eq-ZrV"/>
                 <constraint firstItem="Eps-wz-hN5" firstAttribute="top" secondItem="e8N-fd-w6E" secondAttribute="top" id="eqd-jq-st6"/>
                 <constraint firstAttribute="trailing" secondItem="Eps-wz-hN5" secondAttribute="trailing" id="hAW-1I-RrT"/>
                 <constraint firstAttribute="trailing" secondItem="o7u-U3-K0U" secondAttribute="trailing" constant="20" id="ipr-4A-frL"/>
                 <constraint firstAttribute="bottom" secondItem="Eps-wz-hN5" secondAttribute="bottom" id="nWJ-cW-cnd"/>
                 <constraint firstItem="o7u-U3-K0U" firstAttribute="top" secondItem="e8N-fd-w6E" secondAttribute="top" constant="304" id="qad-mv-PvZ"/>
+                <constraint firstItem="RFs-Pw-EGl" firstAttribute="top" secondItem="e8N-fd-w6E" secondAttribute="top" constant="334" id="vrC-iK-EnV"/>
             </constraints>
             <connections>
                 <outlet property="artistPictureImageView" destination="Eps-wz-hN5" id="opa-h9-iaX"/>
                 <outlet property="blackGradientView" destination="TEz-kX-CFK" id="Xqn-Kr-elF"/>
+                <outlet property="fansLabel" destination="RFs-Pw-EGl" id="Wys-XI-yT3"/>
                 <outlet property="nameLabel" destination="s0v-qf-CsZ" id="chP-gE-AOV"/>
                 <outlet property="toFavoriteButton" destination="o7u-U3-K0U" id="LBn-sZ-ZjH"/>
             </connections>

@@ -28,7 +28,7 @@ extension ArtistViewController {
                 let width = UIScreen.main.bounds.width
                 switch  self {
                 case .photo: return CGSize(width: width, height: width)
-                case .desсription: return CGSize(width: width, height: 120.0)
+                case .desсription: return CGSize(width: width, height: 59.0)
                 case .albums: return CGSize(width: width, height: 172.0)
                 }
             }

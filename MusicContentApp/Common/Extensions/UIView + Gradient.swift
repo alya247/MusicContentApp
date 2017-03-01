@@ -17,4 +17,12 @@ extension UIView {
         layer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
         self.layer.addSublayer(layer)
     }
+    
+    func blackBackGradient(withFrame frame: CGRect) {
+        let layer = CAGradientLayer()
+        layer.frame = frame
+        layer.locations = [0.8, 0.0]
+        layer.colors = [UIColor.black.cgColor, UIColor.clear.cgColor]
+        self.layer.addSublayer(layer)
+    }
 }
