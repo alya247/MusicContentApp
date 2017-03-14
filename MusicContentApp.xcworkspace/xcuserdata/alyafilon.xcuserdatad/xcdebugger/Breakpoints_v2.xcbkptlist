@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MusicContentApp/Buisness/Features/Artist/ArtistDetail/ArtistDetailCells/TrackCell/Track/TrackTableViewCell.swift"
-            timestampString = "509618598.320069"
+            filePath = "MusicContentApp/Buisness/Features/Artist/ArtistDetail/ArtistDetailCells/TrackCell/ArtistDetTrackCollectionViewCell.swift"
+            timestampString = "510394307.55516"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "play(_:)"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

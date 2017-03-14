@@ -41,6 +41,9 @@ class ArtistDetTrackCollectionViewCell: UICollectionViewCell {
                             
                             let track = TrackModelDeezer()
                             track.parseJSON(JSONObj: sub)
+                            
+                            print(sub)
+                            
                             self?.tracks.append(track)
                         }
                         self?.tracksTableView.reloadData()
