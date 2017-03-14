@@ -11,11 +11,16 @@ import SwiftyJSON
 
 class ArtistDetTrackCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var tracksTableView: UITableView!
     
-    var tracks = [TrackModelDeezer]()
+    // MARK: - Properties
     
+    var tracks = [TrackModelDeezer]()
     var artistID: Int?
+    
+    // MARK: - LifeCycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +28,11 @@ class ArtistDetTrackCollectionViewCell: UICollectionViewCell {
         tracksTableView.register(R.nib.track)
         tracksTableView.dataSource = self
     }
+}
+
+// MARK: - Public Methods
+
+extension ArtistDetTrackCollectionViewCell {
     
     func loadTracks(withID artistID: Int) {
         
@@ -57,23 +67,43 @@ class ArtistDetTrackCollectionViewCell: UICollectionViewCell {
     }
 }
 
-extension ArtistDetTrackCollectionViewCell: UITableViewDataSource {
+// MARK: - UITableViewDataSource
 
-    
+extension ArtistDetTrackCollectionViewCell: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
         return tracks.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.trackCell.identifier, for: indexPath) as! TrackTableViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.trackCell.identifier,
+                                                 for: indexPath) as! TrackTableViewCell
+        cell.delegate = self
         cell.fill(withTrack: tracks[indexPath.row])
         
         return cell
     }
 }
+
+// MARK: - StopAnotherPlayerProtocol
+
+extension ArtistDetTrackCollectionViewCell: StopAnotherPlayerProtocol {
+
+    func stopAnotherPlayer() {
+        for i in 0...tracks.count - 1 {
+            let cell = tracksTableView.cellForRow(at: IndexPath(row: i, section: 0)) as! TrackTableViewCell
+            cell.removePlayer()
+        }
+    }
+}
+
+
+
+
+

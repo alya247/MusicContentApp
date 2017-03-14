@@ -111,11 +111,22 @@ extension TrackTableViewCell {
         player?.seek(to: kCMTimeZero)
     }
     
+    func removePlayer() {
+        if player != nil {
+            player = nil
+            playbackSlider.isHidden = true
+            isFirstPlay = true
+        }
+    }
+    
     // MARK: - Actions
     
     @IBAction func play(_ sender: UIButton) {
         
         if isFirstPlay {
+            if delegate?.responds(to: Selector(("stopAnotherPlayer:"))) != nil {
+                delegate?.stopAnotherPlayer()
+            }
             playTrack()
             isFirstPlay = false
         }

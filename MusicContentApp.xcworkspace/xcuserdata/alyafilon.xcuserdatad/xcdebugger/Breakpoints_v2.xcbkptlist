@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MusicContentApp/Buisness/Features/Artist/ArtistDetail/ArtistDetailCells/TrackCell/ArtistDetTrackCollectionViewCell.swift"
-            timestampString = "510394307.55516"
+            timestampString = "511193706.340397"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "stopAnotherPlayer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
