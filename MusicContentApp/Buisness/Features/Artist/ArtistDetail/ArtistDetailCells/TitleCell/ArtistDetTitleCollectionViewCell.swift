@@ -10,12 +10,21 @@ import UIKit
 
 class ArtistDetTitleCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var artistImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    
+    // MARK: - LifeCycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+}
+
+extension ArtistDetTitleCollectionViewCell {
+
+    // MARK: - Public Methods
     
     func fill(withArtist artist: ArtistModelDeezer) {
         

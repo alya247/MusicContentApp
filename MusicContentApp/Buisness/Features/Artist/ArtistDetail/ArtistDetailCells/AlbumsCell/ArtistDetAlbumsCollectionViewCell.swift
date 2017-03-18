@@ -10,9 +10,15 @@ import UIKit
 
 class ArtistDetAlbumsCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var albumsCollectionView: UICollectionView!
     
+    // MARK: - Properties
+    
     var albums = [AlbumModelDeezer]()
+    
+    // MARK: - LifeCycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,14 +28,20 @@ class ArtistDetAlbumsCollectionViewCell: UICollectionViewCell {
         albumsCollectionView.register(R.nib.albumDetail)
     }
     
+    // MARK: - Public Methods
+    
     func fill(withAlbums albums: [AlbumModelDeezer]) {
         self.albums = albums
         albumsCollectionView.reloadData()
     }
     
+    // MARK: - Actions
+    
     @IBAction func showAllAlbums(_ sender: UIButton) {
     }
 }
+
+// MARK: - UICollectionViewDataSource
 
 extension ArtistDetAlbumsCollectionViewCell: UICollectionViewDataSource {
     
@@ -46,6 +58,8 @@ extension ArtistDetAlbumsCollectionViewCell: UICollectionViewDataSource {
         return cell
     }
 }
+
+// MARK: - UICollectionViewDelegateFlowLayout
 
 extension ArtistDetAlbumsCollectionViewCell: UICollectionViewDelegateFlowLayout {
     

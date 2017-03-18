@@ -25,7 +25,7 @@ class SearchViewController: BaseViewController {
         menuBarButtonItem.target = self.revealViewController()
         menuBarButtonItem.action = #selector(SWRevealViewController.revealToggle(_:))
 
-        searchBar.placeholder = "Search artist"
+        searchBar.placeholder = R.string.localizable.searchPlaceholder() //"Search artist"
         searchBar.barStyle = .blackTranslucent
         searchBar.delegate = self
         self.navigationItem.titleView = searchBar

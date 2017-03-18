@@ -21,16 +21,20 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BxP-ot-172">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALBUMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZK-oP-AZl">
-                                <rect key="frame" x="33" y="9" width="73" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALBUMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZK-oP-AZl">
+                                <rect key="frame" x="19" y="9" width="64.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="BgS-3t-eKa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3L-4k-erM">
-                                <rect key="frame" x="279" y="0.0" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3L-4k-erM">
+                                <rect key="frame" x="286" y="0.0" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="0aL-1D-0r4"/>
+                                </constraints>
                                 <state key="normal" title="Show all →">
                                     <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -38,9 +42,8 @@
                                     <action selector="showAllAlbums:" destination="66Q-Pn-yyT" eventType="touchUpInside" id="kuC-Fa-A4T"/>
                                 </connections>
                             </button>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Xa7-fK-cit">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Xa7-fK-cit">
                                 <rect key="frame" x="0.0" y="34" width="375" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.094117647060000004" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fMU-Gm-lG1">
                                     <size key="itemSize" width="150" height="200"/>
@@ -51,14 +54,24 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="G3L-4k-erM" firstAttribute="top" secondItem="BxP-ot-172" secondAttribute="top" id="40Q-J8-K1z"/>
+                            <constraint firstItem="jZK-oP-AZl" firstAttribute="top" secondItem="BxP-ot-172" secondAttribute="top" constant="9" id="6Yo-6T-4uc"/>
+                            <constraint firstItem="Xa7-fK-cit" firstAttribute="top" secondItem="G3L-4k-erM" secondAttribute="bottom" constant="4" id="Pov-OK-MhO"/>
+                            <constraint firstItem="Xa7-fK-cit" firstAttribute="leading" secondItem="BxP-ot-172" secondAttribute="leading" id="SXZ-he-1K7"/>
+                            <constraint firstItem="jZK-oP-AZl" firstAttribute="leading" secondItem="BxP-ot-172" secondAttribute="leading" constant="19" id="tyU-CJ-HzY"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="BxP-ot-172" secondAttribute="bottom" id="Etf-Zj-ec8"/>
+                <constraint firstAttribute="bottom" secondItem="Xa7-fK-cit" secondAttribute="bottom" id="L5B-Vf-P0g"/>
                 <constraint firstAttribute="trailing" secondItem="BxP-ot-172" secondAttribute="trailing" id="RoX-ze-Zkg"/>
                 <constraint firstItem="BxP-ot-172" firstAttribute="top" secondItem="66Q-Pn-yyT" secondAttribute="top" id="Tgh-Ws-vSw"/>
+                <constraint firstAttribute="trailing" secondItem="Xa7-fK-cit" secondAttribute="trailing" id="kXD-HK-86g"/>
                 <constraint firstItem="BxP-ot-172" firstAttribute="leading" secondItem="66Q-Pn-yyT" secondAttribute="leading" id="tHF-dC-Im1"/>
+                <constraint firstAttribute="trailing" secondItem="G3L-4k-erM" secondAttribute="trailing" constant="15" id="wpa-bh-hnu"/>
             </constraints>
             <connections>
                 <outlet property="albumsCollectionView" destination="Xa7-fK-cit" id="vhM-c6-m9a"/>

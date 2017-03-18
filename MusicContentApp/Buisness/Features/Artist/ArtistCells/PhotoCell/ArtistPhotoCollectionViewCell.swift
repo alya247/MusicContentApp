@@ -41,7 +41,7 @@ class ArtistPhotoCollectionViewCell: UICollectionViewCell {
         guard let fans = artist.fans as Int! else {
             return 
         }
-        fansLabel.text = String(describing: fans) + " fans"
+        fansLabel.text = String(describing: fans) + " " + R.string.localizable.funs()
         
         guard let url = artist.pictureBg as URL! else {
             return

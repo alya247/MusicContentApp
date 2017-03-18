@@ -23,8 +23,8 @@ class RelatedCollectionViewCell: UICollectionViewCell {
     func fill(withRelatedArtist artist: ArtistModelDeezer) {
         
         nameLabel.text = artist.name
-        fansLabel.text = String(describing: artist.fans)
-        albumsNumberLabel.text = String(describing: artist.albumsNumber)
+        fansLabel.text = String(describing: artist.fans!) + " " + R.string.localizable.funs()
+        albumsNumberLabel.text = String(describing: artist.albumsNumber!) + " " + R.string.localizable.albums()
         
         guard let url = artist.pictureSm as URL! else {
             return

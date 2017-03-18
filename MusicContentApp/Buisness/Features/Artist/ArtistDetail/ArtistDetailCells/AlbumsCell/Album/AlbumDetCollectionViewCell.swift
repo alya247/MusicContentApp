@@ -10,12 +10,18 @@ import UIKit
 
 class AlbumDetCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var albumImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    
+    // MARK: - LifeCycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
+    
+    // MARK: - Public Methods
     
     func setAlbumInfo(withAlbum album: AlbumModelDeezer) {
         

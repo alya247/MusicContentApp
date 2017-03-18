@@ -32,7 +32,7 @@ extension ArtistDetailViewController {
                 case .title: return CGSize(width: width, height: 170.0)
                 case .albums: return CGSize(width: width, height: 223.0)
                 case .related: return CGSize(width: width, height: 207.0)
-                case .tracks: return CGSize(width: width, height: 380.0)
+                case .tracks: return CGSize(width: width, height: 369.0)
                 }
             }
         }

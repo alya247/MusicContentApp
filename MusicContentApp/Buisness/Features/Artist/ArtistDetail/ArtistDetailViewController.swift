@@ -10,13 +10,19 @@ import UIKit
 import SwiftyJSON
 
 class ArtistDetailViewController: BaseViewController {
+    
+    // MARK: - IBOutlets
 
     @IBOutlet weak var artistDetailCollectionView: UICollectionView!
+    
+    // MARK: - Properties
     
     var artistID: Int?
 
     var artist = ArtistModelDeezer()
     var albums = [AlbumModelDeezer]()
+    
+    // MARK: - LifeCycle
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +34,16 @@ class ArtistDetailViewController: BaseViewController {
     }
 }
 
+// MARK: - PushViewControllerProtocol
+
 extension ArtistDetailViewController: PushViewControllerProtocol {
     
     func pushViewController(controller: UIViewController) {
         self.navigationController?.pushViewController(controller, animated: true)
     }
 }
+
+// MARK: - UICollectionViewDataSource
 
 extension ArtistDetailViewController: UICollectionViewDataSource {
     
@@ -74,6 +84,8 @@ extension ArtistDetailViewController: UICollectionViewDataSource {
         }
     }
 }
+
+// MARK: - UICollectionViewDelegateFlowLayout
 
 extension ArtistDetailViewController: UICollectionViewDelegateFlowLayout {
     

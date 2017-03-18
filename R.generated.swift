@@ -312,8 +312,281 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.string` struct is generated, and contains static references to 0 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 9 localization tables.
   struct string {
+    /// This `R.string.artistAlbums` struct is generated, and contains static references to 1 localization keys.
+    struct artistAlbums {
+      /// ru translation: АЛЬБОМЫ
+      /// 
+      /// Locales: ru
+      static let zgy2PY87Text = Rswift.StringResource(key: "zgy-2P-Y87.text", tableName: "ArtistAlbums", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      
+      /// ru translation: АЛЬБОМЫ
+      /// 
+      /// Locales: ru
+      static func zgy2PY87Text(_: Void = ()) -> String {
+        return NSLocalizedString("zgy-2P-Y87.text", tableName: "ArtistAlbums", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.artistDetAlbums` struct is generated, and contains static references to 2 localization keys.
+    struct artistDetAlbums {
+      /// ru translation: АЛЬБОМЫ
+      /// 
+      /// Locales: ru
+      static let jZKOPAZlText = Rswift.StringResource(key: "jZK-oP-AZl.text", tableName: "ArtistDetAlbums", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      /// ru translation: Показать все →
+      /// 
+      /// Locales: ru
+      static let g3L4kErMNormalTitle = Rswift.StringResource(key: "G3L-4k-erM.normalTitle", tableName: "ArtistDetAlbums", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      
+      /// ru translation: АЛЬБОМЫ
+      /// 
+      /// Locales: ru
+      static func jZKOPAZlText(_: Void = ()) -> String {
+        return NSLocalizedString("jZK-oP-AZl.text", tableName: "ArtistDetAlbums", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// ru translation: Показать все →
+      /// 
+      /// Locales: ru
+      static func g3L4kErMNormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("G3L-4k-erM.normalTitle", tableName: "ArtistDetAlbums", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.artistDetRelated` struct is generated, and contains static references to 2 localization keys.
+    struct artistDetRelated {
+      /// ru translation: ПОХОЖИЕ
+      /// 
+      /// Locales: ru
+      static let jqe66ZrcText = Rswift.StringResource(key: "jqe-66-Zrc.text", tableName: "ArtistDetRelated", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      /// ru translation: Показать все →
+      /// 
+      /// Locales: ru
+      static let jH7CAKJNormalTitle = Rswift.StringResource(key: "4jH-7C-aKJ.normalTitle", tableName: "ArtistDetRelated", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      
+      /// ru translation: ПОХОЖИЕ
+      /// 
+      /// Locales: ru
+      static func jqe66ZrcText(_: Void = ()) -> String {
+        return NSLocalizedString("jqe-66-Zrc.text", tableName: "ArtistDetRelated", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// ru translation: Показать все →
+      /// 
+      /// Locales: ru
+      static func jH7CAKJNormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("4jH-7C-aKJ.normalTitle", tableName: "ArtistDetRelated", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.artistDetTrack` struct is generated, and contains static references to 1 localization keys.
+    struct artistDetTrack {
+      /// ru translation: ТОП 5
+      /// 
+      /// Locales: ru
+      static let bbBZm4dfText = Rswift.StringResource(key: "bbB-zm-4df.text", tableName: "ArtistDetTrack", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      
+      /// ru translation: ТОП 5
+      /// 
+      /// Locales: ru
+      static func bbBZm4dfText(_: Void = ()) -> String {
+        return NSLocalizedString("bbB-zm-4df.text", tableName: "ArtistDetTrack", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.artistPhoto` struct is generated, and contains static references to 3 localization keys.
+    struct artistPhoto {
+      /// ru translation: gg
+      /// 
+      /// Locales: ru
+      static let s0vQfCsZText = Rswift.StringResource(key: "s0v-qf-CsZ.text", tableName: "ArtistPhoto", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      /// ru translation: Больше
+      /// 
+      /// Locales: ru
+      static let o7uU3K0UNormalTitle = Rswift.StringResource(key: "o7u-U3-K0U.normalTitle", tableName: "ArtistPhoto", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      /// ru translation: фаната
+      /// 
+      /// Locales: ru
+      static let rFsPwEGlText = Rswift.StringResource(key: "RFs-Pw-EGl.text", tableName: "ArtistPhoto", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      
+      /// ru translation: gg
+      /// 
+      /// Locales: ru
+      static func s0vQfCsZText(_: Void = ()) -> String {
+        return NSLocalizedString("s0v-qf-CsZ.text", tableName: "ArtistPhoto", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// ru translation: Больше
+      /// 
+      /// Locales: ru
+      static func o7uU3K0UNormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("o7u-U3-K0U.normalTitle", tableName: "ArtistPhoto", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// ru translation: фаната
+      /// 
+      /// Locales: ru
+      static func rFsPwEGlText(_: Void = ()) -> String {
+        return NSLocalizedString("RFs-Pw-EGl.text", tableName: "ArtistPhoto", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.launchScreen` struct is generated, and contains static references to 0 localization keys.
+    struct launchScreen {
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.localizable` struct is generated, and contains static references to 3 localization keys.
+    struct localizable {
+      /// Base translation: Search artist...
+      /// 
+      /// Locales: Base, ru
+      static let searchPlaceholder = Rswift.StringResource(key: "searchPlaceholder", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: albums
+      /// 
+      /// Locales: Base, ru
+      static let albums = Rswift.StringResource(key: "albums", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      /// Base translation: funs
+      /// 
+      /// Locales: Base, ru
+      static let funs = Rswift.StringResource(key: "funs", tableName: "Localizable", bundle: R.hostingBundle, locales: ["Base", "ru"], comment: nil)
+      
+      /// Base translation: Search artist...
+      /// 
+      /// Locales: Base, ru
+      static func searchPlaceholder(_: Void = ()) -> String {
+        return NSLocalizedString("searchPlaceholder", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Base translation: albums
+      /// 
+      /// Locales: Base, ru
+      static func albums(_: Void = ()) -> String {
+        return NSLocalizedString("albums", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Base translation: funs
+      /// 
+      /// Locales: Base, ru
+      static func funs(_: Void = ()) -> String {
+        return NSLocalizedString("funs", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.login` struct is generated, and contains static references to 3 localization keys.
+    struct login {
+      /// ru translation: Вход
+      /// 
+      /// Locales: ru
+      static let aNNJW8TNormalTitle = Rswift.StringResource(key: "7AN-nJ-W8T.normalTitle", tableName: "Login", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      /// ru translation: Пропустить
+      /// 
+      /// Locales: ru
+      static let ipFPfQDCNormalTitle = Rswift.StringResource(key: "IpF-Pf-QDC.normalTitle", tableName: "Login", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      /// ru translation: Я принимаю Условия и Соглашения
+      /// 
+      /// Locales: ru
+      static let r9dBRQiANormalTitle = Rswift.StringResource(key: "R9d-BR-QiA.normalTitle", tableName: "Login", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      
+      /// ru translation: Вход
+      /// 
+      /// Locales: ru
+      static func aNNJW8TNormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("7AN-nJ-W8T.normalTitle", tableName: "Login", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// ru translation: Пропустить
+      /// 
+      /// Locales: ru
+      static func ipFPfQDCNormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("IpF-Pf-QDC.normalTitle", tableName: "Login", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// ru translation: Я принимаю Условия и Соглашения
+      /// 
+      /// Locales: ru
+      static func r9dBRQiANormalTitle(_: Void = ()) -> String {
+        return NSLocalizedString("R9d-BR-QiA.normalTitle", tableName: "Login", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.menu` struct is generated, and contains static references to 5 localization keys.
+    struct menu {
+      /// ru translation: ВЫХОД
+      /// 
+      /// Locales: ru
+      static let v2Zw8UKText = Rswift.StringResource(key: "0V2-Zw-8UK.text", tableName: "Menu", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      /// ru translation: ГЛАВНАЯ
+      /// 
+      /// Locales: ru
+      static let av4ZVChOText = Rswift.StringResource(key: "av4-ZV-chO.text", tableName: "Menu", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      /// ru translation: ЛЮБИМЫЕ ИСПОЛНИТЕЛИ
+      /// 
+      /// Locales: ru
+      static let lQJ7kAbhText = Rswift.StringResource(key: "LQJ-7k-abh.text", tableName: "Menu", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      /// ru translation: ПОИСК
+      /// 
+      /// Locales: ru
+      static let tABJEKText = Rswift.StringResource(key: "94t-AB-jEK.text", tableName: "Menu", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      /// ru translation: ПРОФИЛЬ
+      /// 
+      /// Locales: ru
+      static let smKZGHNZText = Rswift.StringResource(key: "smK-ZG-HNZ.text", tableName: "Menu", bundle: R.hostingBundle, locales: ["ru"], comment: nil)
+      
+      /// ru translation: ВЫХОД
+      /// 
+      /// Locales: ru
+      static func v2Zw8UKText(_: Void = ()) -> String {
+        return NSLocalizedString("0V2-Zw-8UK.text", tableName: "Menu", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// ru translation: ГЛАВНАЯ
+      /// 
+      /// Locales: ru
+      static func av4ZVChOText(_: Void = ()) -> String {
+        return NSLocalizedString("av4-ZV-chO.text", tableName: "Menu", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// ru translation: ЛЮБИМЫЕ ИСПОЛНИТЕЛИ
+      /// 
+      /// Locales: ru
+      static func lQJ7kAbhText(_: Void = ()) -> String {
+        return NSLocalizedString("LQJ-7k-abh.text", tableName: "Menu", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// ru translation: ПОИСК
+      /// 
+      /// Locales: ru
+      static func tABJEKText(_: Void = ()) -> String {
+        return NSLocalizedString("94t-AB-jEK.text", tableName: "Menu", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// ru translation: ПРОФИЛЬ
+      /// 
+      /// Locales: ru
+      static func smKZGHNZText(_: Void = ()) -> String {
+        return NSLocalizedString("smK-ZG-HNZ.text", tableName: "Menu", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -338,8 +611,8 @@ struct _R: Rswift.Validatable {
   
   struct nib: Rswift.Validatable {
     static func validate() throws {
-      try _ShortBio.validate()
       try _Track.validate()
+      try _ShortBio.validate()
     }
     
     struct _AlbumDetail: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
@@ -525,10 +798,10 @@ struct _R: Rswift.Validatable {
   
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
-      try login.validate()
-      try menu.validate()
-      try search.validate()
       try artist.validate()
+      try login.validate()
+      try search.validate()
+      try menu.validate()
       try mainScreen.validate()
     }
     

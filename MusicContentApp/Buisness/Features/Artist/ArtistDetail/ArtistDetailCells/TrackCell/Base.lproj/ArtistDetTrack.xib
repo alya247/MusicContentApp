@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artistDetTrackCell" id="SGn-BH-mew" customClass="ArtistDetTrackCollectionViewCell" customModule="MusicContentApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="369"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="369"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XH2-YF-15J">
+                        <rect key="frame" x="0.0" y="49" width="375" height="320"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    </tableView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbB-zm-4df">
+                        <rect key="frame" x="19" y="12" width="44.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="9G9-eb-wd3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.094102360308170319" green="0.09412645548582077" blue="0.094100810587406158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XH2-YF-15J" secondAttribute="trailing" id="0en-vX-yD1"/>
+                <constraint firstItem="XH2-YF-15J" firstAttribute="leading" secondItem="SGn-BH-mew" secondAttribute="leading" id="KG4-lZ-ic9"/>
+                <constraint firstAttribute="bottom" secondItem="XH2-YF-15J" secondAttribute="bottom" id="Nf8-UU-yfB"/>
+                <constraint firstItem="bbB-zm-4df" firstAttribute="leading" secondItem="SGn-BH-mew" secondAttribute="leading" constant="19" id="W6u-Xd-gCt"/>
+                <constraint firstItem="bbB-zm-4df" firstAttribute="top" secondItem="SGn-BH-mew" secondAttribute="top" constant="12" id="alp-tk-Ezz"/>
+                <constraint firstItem="XH2-YF-15J" firstAttribute="top" secondItem="bbB-zm-4df" secondAttribute="bottom" constant="19" id="yQ1-oh-0yc"/>
+            </constraints>
+            <size key="customSize" width="375" height="377"/>
+            <connections>
+                <outlet property="tracksTableView" destination="XH2-YF-15J" id="GWJ-Gg-H0u"/>
+            </connections>
+            <point key="canvasLocation" x="-22.5" y="172.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

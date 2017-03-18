@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "LOG OUT"; ObjectID = "0V2-Zw-8UK"; */
+"0V2-Zw-8UK.text" = "ВЫХОД";
+
+/* Class = "UILabel"; text = "SEARCH"; ObjectID = "94t-AB-jEK"; */
+"94t-AB-jEK.text" = "ПОИСК";
+
+/* Class = "UILabel"; text = "FAVORITE ARTISTS"; ObjectID = "LQJ-7k-abh"; */
+"LQJ-7k-abh.text" = "ЛЮБИМЫЕ ИСПОЛНИТЕЛИ";
+
+/* Class = "UILabel"; text = "MAIN"; ObjectID = "av4-ZV-chO"; */
+"av4-ZV-chO.text" = "ГЛАВНАЯ";
+
+/* Class = "UILabel"; text = "PROFILE"; ObjectID = "smK-ZG-HNZ"; */
+"smK-ZG-HNZ.text" = "ПРОФИЛЬ";

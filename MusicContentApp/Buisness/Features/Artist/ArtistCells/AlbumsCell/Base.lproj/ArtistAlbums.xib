@@ -18,16 +18,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALBUMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgy-2P-Y87">
-                        <rect key="frame" x="31" y="10" width="79" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALBUMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgy-2P-Y87">
+                        <rect key="frame" x="19" y="10" width="68.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="t7t-6t-6nJ"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gs2-ih-cig">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gs2-ih-cig">
                         <rect key="frame" x="0.0" y="39" width="375" height="133"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="0.12939286229999999" green="0.12942266459999999" blue="0.12939092520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="20" id="8YJ-0F-6Re">
                             <size key="itemSize" width="50" height="50"/>
@@ -39,6 +40,14 @@
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.12939286231994629" green="0.12942266464233398" blue="0.12939092516899109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zgy-2P-Y87" firstAttribute="leading" secondItem="iSz-RA-vCS" secondAttribute="leading" constant="19" id="8KO-OW-1sg"/>
+                <constraint firstAttribute="bottom" secondItem="Gs2-ih-cig" secondAttribute="bottom" id="CEB-YT-nlK"/>
+                <constraint firstItem="Gs2-ih-cig" firstAttribute="top" secondItem="zgy-2P-Y87" secondAttribute="bottom" constant="8" id="LUo-Ej-NIf"/>
+                <constraint firstItem="zgy-2P-Y87" firstAttribute="top" secondItem="iSz-RA-vCS" secondAttribute="top" constant="10" id="P4X-04-zbp"/>
+                <constraint firstItem="Gs2-ih-cig" firstAttribute="leading" secondItem="iSz-RA-vCS" secondAttribute="leading" id="tem-z2-O1r"/>
+                <constraint firstAttribute="trailing" secondItem="Gs2-ih-cig" secondAttribute="trailing" id="wGZ-5b-PIM"/>
+            </constraints>
             <connections>
                 <outlet property="albumsCollectionView" destination="Gs2-ih-cig" id="Ikm-Fb-PHG"/>
             </connections>

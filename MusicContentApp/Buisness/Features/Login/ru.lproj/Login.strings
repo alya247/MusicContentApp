@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "7AN-nJ-W8T"; */
+"7AN-nJ-W8T.normalTitle" = "Вход";
+
+/* Class = "UIButton"; normalTitle = "SKIP FOR NOW"; ObjectID = "IpF-Pf-QDC"; */
+"IpF-Pf-QDC.normalTitle" = "Пропустить";
+
+/* Class = "UIButton"; normalTitle = "I accept Terms and Conditionals"; ObjectID = "R9d-BR-QiA"; */
+"R9d-BR-QiA.normalTitle" = "Я принимаю Условия и Соглашения";

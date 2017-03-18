@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MusicContentApp
+
+  Created by Alya Filon on 16.03.17.
+  Copyright © 2017 Alya Filon. All rights reserved.
+*/
+
+"searchPlaceholder" = "Поиск исполнителя...";
+"funs" = "фанов";
+"albums" = "альбомов";

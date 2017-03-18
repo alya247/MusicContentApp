@@ -99,7 +99,7 @@ extension TrackTableViewCell {
         let targetTime:CMTime = CMTimeMake(seconds, 1)
         
         player!.seek(to: targetTime)
-        if player!.rate == 0
+        if player!.rate != 0
         {
             player?.play()
         }
@@ -114,6 +114,7 @@ extension TrackTableViewCell {
     func removePlayer() {
         if player != nil {
             player = nil
+            playButton.setImage(R.image.play(), for: .normal)
             playbackSlider.isHidden = true
             isFirstPlay = true
         }

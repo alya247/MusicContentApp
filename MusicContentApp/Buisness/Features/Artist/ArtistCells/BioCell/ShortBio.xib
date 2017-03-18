@@ -18,34 +18,56 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHv-oF-K7F">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHv-oF-K7F">
                         <rect key="frame" x="327" y="15" width="22" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="WFC-i9-E3c"/>
+                            <constraint firstAttribute="width" constant="22" id="t3i-ee-YYM"/>
+                        </constraints>
                         <state key="normal" image="likeUnselected"/>
                         <connections>
                             <action selector="addToFavorite:" destination="z7n-Rt-FvN" eventType="touchUpInside" id="0kk-9v-BSN"/>
                         </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruG-9n-fe7">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruG-9n-fe7">
                         <rect key="frame" x="52" y="19" width="82" height="15"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="L22-mC-FAB"/>
+                            <constraint firstAttribute="height" constant="15" id="WFg-as-gAd"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
                         <state key="normal" title="DEEZER link">
                             <color key="titleColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="worldwide" translatesAutoresizingMaskIntoConstraints="NO" id="5s4-d6-DJc">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldwide" translatesAutoresizingMaskIntoConstraints="NO" id="5s4-d6-DJc">
                         <rect key="frame" x="21" y="15" width="22" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="erd-bj-a0v"/>
+                            <constraint firstAttribute="height" constant="22" id="p7O-H1-jgK"/>
+                        </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imq-hs-7SK">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imq-hs-7SK">
                         <rect key="frame" x="286" y="15" width="22" height="22"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="A7u-6p-wIf"/>
+                            <constraint firstAttribute="height" constant="22" id="BFj-Kr-i6r"/>
+                        </constraints>
                         <state key="normal" image="playlist"/>
                     </button>
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Imq-hs-7SK" firstAttribute="top" secondItem="z7n-Rt-FvN" secondAttribute="top" constant="15" id="2KC-6g-mvE"/>
+                <constraint firstAttribute="trailing" secondItem="MHv-oF-K7F" secondAttribute="trailing" constant="26" id="BjX-aa-3BP"/>
+                <constraint firstItem="5s4-d6-DJc" firstAttribute="leading" secondItem="z7n-Rt-FvN" secondAttribute="leading" constant="21" id="E2T-92-UBi"/>
+                <constraint firstItem="MHv-oF-K7F" firstAttribute="top" secondItem="z7n-Rt-FvN" secondAttribute="top" constant="15" id="E7s-JJ-BsX"/>
+                <constraint firstItem="5s4-d6-DJc" firstAttribute="top" secondItem="z7n-Rt-FvN" secondAttribute="top" constant="15" id="IK9-in-icg"/>
+                <constraint firstItem="ruG-9n-fe7" firstAttribute="top" secondItem="z7n-Rt-FvN" secondAttribute="top" constant="19" id="aGe-z8-Kg0"/>
+                <constraint firstItem="MHv-oF-K7F" firstAttribute="leading" secondItem="Imq-hs-7SK" secondAttribute="trailing" constant="19" id="kj9-7A-MCn"/>
+                <constraint firstItem="ruG-9n-fe7" firstAttribute="leading" secondItem="5s4-d6-DJc" secondAttribute="trailing" constant="9" id="tH1-2z-LIL"/>
+            </constraints>
             <size key="customSize" width="375" height="59"/>
             <connections>
                 <outlet property="likeButton" destination="MHv-oF-K7F" id="kb6-F5-ZnA"/>
