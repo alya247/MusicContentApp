@@ -19,6 +19,8 @@ class TrackModelDeezer {
     var preview: URL?
     var contributors = Array<String>()
     
+    var album = AlbumModelDeezer()
+    
     func parseJSON(JSONObj: JSON) {
         
         id = JSONObj["id"].int
@@ -28,11 +30,16 @@ class TrackModelDeezer {
         preview = JSONObj["preview"].url
         artist = JSONObj["artist"]["name"].string
         
-        let contributorsArray = JSONObj["contributors"].array
-        for contributor in contributorsArray! {
-            contributors.append(contributor["name"].string!)
+        if let contributorsArray = JSONObj["contributors"].array as Array! {
+            
+            for contributor in contributorsArray {
+                contributors.append(contributor["name"].string!)
+            }
         }
         
-        print(contributors)
+        let a = AlbumModelDeezer()
+        
+        a.parseJSON(JSONObj: JSONObj["album"])
+        album = a
     }
 }

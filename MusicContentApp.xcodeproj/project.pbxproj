@@ -8,7 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7803AC231D73C32817AF66D1 /* Pods_MusicContentApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504E9119D07D13908F219C0A /* Pods_MusicContentApp.framework */; };
+		FE147A1B1E83AB1D0005D03A /* ArtistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE147A1A1E83AB1D0005D03A /* ArtistCollectionViewCell.swift */; };
+		FE147A1D1E83AB2D0005D03A /* Artist.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE147A1C1E83AB2D0005D03A /* Artist.xib */; };
+		FE147A551E83D0E30005D03A /* ArtistsFeed.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE147A571E83D0E30005D03A /* ArtistsFeed.xib */; };
+		FE147A5F1E83E89B0005D03A /* FeedTracks.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE147A5E1E83E89B0005D03A /* FeedTracks.xib */; };
+		FE147A611E83E8D10005D03A /* FeedTracksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE147A601E83E8D10005D03A /* FeedTracksCollectionViewCell.swift */; };
+		FE147A631E83EAFF0005D03A /* FeedTrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE147A621E83EAFF0005D03A /* FeedTrackCollectionViewCell.swift */; };
+		FE147A651E83EB0C0005D03A /* FeedTrack.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE147A641E83EB0C0005D03A /* FeedTrack.xib */; };
 		FE18D9021E67649C00DB454F /* UIImage + gradientNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE18D9011E67649C00DB454F /* UIImage + gradientNavBar.swift */; };
+		FE2DAD1F1E801CA600565020 /* CircularCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2DAD1E1E801CA600565020 /* CircularCellLayout.swift */; };
 		FE6000BB1E7AE4E700156E1F /* ArtistPhoto.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6000BD1E7AE4E700156E1F /* ArtistPhoto.xib */; };
 		FE6000C01E7AE6D900156E1F /* ArtistDetAlbums.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6000C21E7AE6D900156E1F /* ArtistDetAlbums.xib */; };
 		FE6000C51E7AE70B00156E1F /* ArtistDetRelated.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE6000C71E7AE70B00156E1F /* ArtistDetRelated.xib */; };
@@ -70,13 +78,24 @@
 		FEC3BCFD1E5C7CB500DA7963 /* Related.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEC3BCFC1E5C7CB500DA7963 /* Related.xib */; };
 		FEC3EDDB1E62BDD900D2C060 /* ArtistViewController + CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC3EDDA1E62BDD900D2C060 /* ArtistViewController + CollectionViewLayout.swift */; };
 		FEC3EDDD1E641E6E00D2C060 /* ArtistDetailViewController + CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC3EDDC1E641E6E00D2C060 /* ArtistDetailViewController + CollectionViewLayout.swift */; };
+		FEE25AD41E7D6BF30044E88F /* ChartAPIDeezer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE25AD31E7D6BF30044E88F /* ChartAPIDeezer.swift */; };
+		FEE25AD71E7D6FE50044E88F /* MainViewController + CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE25AD61E7D6FE50044E88F /* MainViewController + CollectionViewLayout.swift */; };
+		FEE25ADB1E7D77DF0044E88F /* ArtistsFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE25ADA1E7D77DF0044E88F /* ArtistsFeedCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		150297A655D829E1DBEBC231 /* Pods-MusicContentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicContentApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicContentApp/Pods-MusicContentApp.release.xcconfig"; sourceTree = "<group>"; };
 		504E9119D07D13908F219C0A /* Pods_MusicContentApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicContentApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2988EFD4F6E0714898FE95A /* Pods-MusicContentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicContentApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicContentApp/Pods-MusicContentApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FE147A1A1E83AB1D0005D03A /* ArtistCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE147A1C1E83AB2D0005D03A /* Artist.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Artist.xib; sourceTree = "<group>"; };
+		FE147A5E1E83E89B0005D03A /* FeedTracks.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTracks.xib; sourceTree = "<group>"; };
+		FE147A601E83E8D10005D03A /* FeedTracksCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTracksCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE147A621E83EAFF0005D03A /* FeedTrackCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTrackCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE147A641E83EB0C0005D03A /* FeedTrack.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTrack.xib; sourceTree = "<group>"; };
+		FE147A661E83F6F90005D03A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ArtistsFeed.xib; sourceTree = "<group>"; };
 		FE18D9011E67649C00DB454F /* UIImage + gradientNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + gradientNavBar.swift"; sourceTree = "<group>"; };
+		FE2DAD1E1E801CA600565020 /* CircularCellLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularCellLayout.swift; sourceTree = "<group>"; };
 		FE6000BA1E7AE4B800156E1F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FE6000BC1E7AE4E700156E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ArtistPhoto.xib; sourceTree = "<group>"; };
 		FE6000BF1E7AE4F000156E1F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ArtistPhoto.strings; sourceTree = "<group>"; };
@@ -151,6 +170,9 @@
 		FEC3BCFC1E5C7CB500DA7963 /* Related.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Related.xib; sourceTree = "<group>"; };
 		FEC3EDDA1E62BDD900D2C060 /* ArtistViewController + CollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArtistViewController + CollectionViewLayout.swift"; sourceTree = "<group>"; };
 		FEC3EDDC1E641E6E00D2C060 /* ArtistDetailViewController + CollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArtistDetailViewController + CollectionViewLayout.swift"; sourceTree = "<group>"; };
+		FEE25AD31E7D6BF30044E88F /* ChartAPIDeezer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartAPIDeezer.swift; sourceTree = "<group>"; };
+		FEE25AD61E7D6FE50044E88F /* MainViewController + CollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController + CollectionViewLayout.swift"; sourceTree = "<group>"; };
+		FEE25ADA1E7D77DF0044E88F /* ArtistsFeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsFeedCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +202,34 @@
 				504E9119D07D13908F219C0A /* Pods_MusicContentApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE147A191E83AB040005D03A /* ArtistCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE147A1A1E83AB1D0005D03A /* ArtistCollectionViewCell.swift */,
+				FE147A1C1E83AB2D0005D03A /* Artist.xib */,
+			);
+			path = ArtistCell;
+			sourceTree = "<group>";
+		};
+		FE147A5A1E83E8460005D03A /* TracksCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE147A5B1E83E85E0005D03A /* TrackCell */,
+				FE147A5E1E83E89B0005D03A /* FeedTracks.xib */,
+				FE147A601E83E8D10005D03A /* FeedTracksCollectionViewCell.swift */,
+			);
+			path = TracksCell;
+			sourceTree = "<group>";
+		};
+		FE147A5B1E83E85E0005D03A /* TrackCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE147A621E83EAFF0005D03A /* FeedTrackCollectionViewCell.swift */,
+				FE147A641E83EB0C0005D03A /* FeedTrack.xib */,
+			);
+			path = TrackCell;
 			sourceTree = "<group>";
 		};
 		FE6461091E584AE1007984DC = {
@@ -294,8 +344,10 @@
 		FEAD06FF1E64AAFA00C380B4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FEAD07001E64AB5300C380B4 /* MainViewController.swift */,
+				FEE25AD81E7D77900044E88F /* FeedCells */,
 				FEAD07021E64AB6B00C380B4 /* MainScreen.storyboard */,
+				FEAD07001E64AB5300C380B4 /* MainViewController.swift */,
+				FEE25AD61E7D6FE50044E88F /* MainViewController + CollectionViewLayout.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -473,6 +525,7 @@
 				FEB2B8BD1E589AEA00D2E27B /* ArtistAPIDeezer.swift */,
 				FEC3BCD11E5B71D300DA7963 /* SearchAPIDeezer.swift */,
 				FE7017621E5EFA6900548871 /* TrackAPIDeezer.swift */,
+				FEE25AD31E7D6BF30044E88F /* ChartAPIDeezer.swift */,
 			);
 			path = Deezer;
 			sourceTree = "<group>";
@@ -592,6 +645,26 @@
 			path = Related;
 			sourceTree = "<group>";
 		};
+		FEE25AD81E7D77900044E88F /* FeedCells */ = {
+			isa = PBXGroup;
+			children = (
+				FE147A5A1E83E8460005D03A /* TracksCell */,
+				FEE25AD91E7D77C60044E88F /* ArtistsCell */,
+			);
+			path = FeedCells;
+			sourceTree = "<group>";
+		};
+		FEE25AD91E7D77C60044E88F /* ArtistsCell */ = {
+			isa = PBXGroup;
+			children = (
+				FE147A191E83AB040005D03A /* ArtistCell */,
+				FEE25ADA1E7D77DF0044E88F /* ArtistsFeedCollectionViewCell.swift */,
+				FE147A571E83D0E30005D03A /* ArtistsFeed.xib */,
+				FE2DAD1E1E801CA600565020 /* CircularCellLayout.swift */,
+			);
+			path = ArtistsCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -658,10 +731,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE147A1D1E83AB2D0005D03A /* Artist.xib in Resources */,
 				FE801F371E655F9C0072D905 /* MULLEREXTRABOLD.otf in Resources */,
 				FE6461201E584AE1007984DC /* LaunchScreen.storyboard in Resources */,
+				FE147A5F1E83E89B0005D03A /* FeedTracks.xib in Resources */,
 				FEAD07031E64AB6B00C380B4 /* MainScreen.storyboard in Resources */,
 				FEC3BCFD1E5C7CB500DA7963 /* Related.xib in Resources */,
+				FE147A551E83D0E30005D03A /* ArtistsFeed.xib in Resources */,
 				FE70E6281E59A1CD0021B4E5 /* AlbumImage.xib in Resources */,
 				FE64611D1E584AE1007984DC /* Assets.xcassets in Resources */,
 				FEC3BCEB1E5C519F00DA7963 /* ArtistDetTitle.xib in Resources */,
@@ -670,6 +746,7 @@
 				FE6000CF1E7AE76900156E1F /* ArtistAlbums.xib in Resources */,
 				FE6000D61E7AE8FC00156E1F /* Localizable.strings in Resources */,
 				FEC3BCCE1E5B6E3F00DA7963 /* Search.storyboard in Resources */,
+				FE147A651E83EB0C0005D03A /* FeedTrack.xib in Resources */,
 				FE6000C51E7AE70B00156E1F /* ArtistDetRelated.xib in Resources */,
 				FE7017681E601A9D00548871 /* Track.xib in Resources */,
 				FEC3BCF61E5C5D1500DA7963 /* AlbumDetail.xib in Resources */,
@@ -750,9 +827,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEE25AD71E7D6FE50044E88F /* MainViewController + CollectionViewLayout.swift in Sources */,
 				FEC3BCF81E5C7B1B00DA7963 /* ArtistDetAlbumsCollectionViewCell.swift in Sources */,
 				FEC3BCF71E5C7A1C00DA7963 /* AlbumDetCollectionViewCell.swift in Sources */,
 				FEB2B8A01E584EEA00D2E27B /* UITextField + Underline.swift in Sources */,
+				FE2DAD1F1E801CA600565020 /* CircularCellLayout.swift in Sources */,
+				FE147A1B1E83AB1D0005D03A /* ArtistCollectionViewCell.swift in Sources */,
 				FEB2B8AC1E58816D00D2E27B /* UserSession.swift in Sources */,
 				FE70175F1E5EF43A00548871 /* UIView + Gradient.swift in Sources */,
 				FEAD07011E64AB5300C380B4 /* MainViewController.swift in Sources */,
@@ -767,11 +847,14 @@
 				FEC3BCD21E5B71D300DA7963 /* SearchAPIDeezer.swift in Sources */,
 				FE70E6261E59A1C60021B4E5 /* AlbumImageCollectionViewCell.swift in Sources */,
 				FE70E6341E59DC710021B4E5 /* MenuViewController.swift in Sources */,
+				FE147A631E83EAFF0005D03A /* FeedTrackCollectionViewCell.swift in Sources */,
 				FEC3BCDC1E5C504100DA7963 /* ArtistDetailViewController.swift in Sources */,
 				FE7017611E5EF9C900548871 /* TrackDeezerModel.swift in Sources */,
 				FE6461161E584AE1007984DC /* AppDelegate.swift in Sources */,
 				FEC3BCD01E5B6E4C00DA7963 /* SearchViewController.swift in Sources */,
 				FEC3BCFB1E5C7CA600DA7963 /* RelatedCollectionViewCell.swift in Sources */,
+				FEE25AD41E7D6BF30044E88F /* ChartAPIDeezer.swift in Sources */,
+				FE147A611E83E8D10005D03A /* FeedTracksCollectionViewCell.swift in Sources */,
 				FEB2B8C01E58A03000D2E27B /* ArtistAPILastFM.swift in Sources */,
 				FEC3EDDD1E641E6E00D2C060 /* ArtistDetailViewController + CollectionViewLayout.swift in Sources */,
 				FEC3BCE91E5C518900DA7963 /* ArtistDetTrackCollectionViewCell.swift in Sources */,
@@ -787,6 +870,7 @@
 				FE70176A1E601AF800548871 /* TrackTableViewCell.swift in Sources */,
 				FE70E6231E599A420021B4E5 /* ImageLoader.swift in Sources */,
 				FEB2B8AA1E5851D400D2E27B /* AuthViewController.swift in Sources */,
+				FEE25ADB1E7D77DF0044E88F /* ArtistsFeedCollectionViewCell.swift in Sources */,
 				FEB2B8AE1E5888D200D2E27B /* BioCollectionViewCell.swift in Sources */,
 				FEC3EDDB1E62BDD900D2C060 /* ArtistViewController + CollectionViewLayout.swift in Sources */,
 				FE18D9021E67649C00DB454F /* UIImage + gradientNavBar.swift in Sources */,
@@ -797,6 +881,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		FE147A571E83D0E30005D03A /* ArtistsFeed.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE147A661E83F6F90005D03A /* en */,
+			);
+			name = ArtistsFeed.xib;
+			sourceTree = "<group>";
+		};
 		FE6000BD1E7AE4E700156E1F /* ArtistPhoto.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

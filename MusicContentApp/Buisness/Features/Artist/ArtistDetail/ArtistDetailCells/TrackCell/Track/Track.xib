@@ -50,7 +50,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <slider hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="7p6-Mg-2J7">
-                        <rect key="frame" x="68" y="24" width="287" height="31"/>
+                        <rect key="frame" x="68" y="19" width="287" height="31"/>
                     </slider>
                 </subviews>
                 <constraints>
@@ -68,7 +68,7 @@
             <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pqY-9r-ml7" secondAttribute="trailing" constant="6" id="3A7-Ao-ysI"/>
-                <constraint firstAttribute="bottom" secondItem="7p6-Mg-2J7" secondAttribute="bottom" constant="10" id="8bB-Cb-rt0"/>
+                <constraint firstAttribute="bottom" secondItem="7p6-Mg-2J7" secondAttribute="bottom" constant="15" id="8bB-Cb-rt0"/>
             </constraints>
             <connections>
                 <outlet property="artistLabel" destination="pqY-9r-ml7" id="yyv-W8-hHQ"/>

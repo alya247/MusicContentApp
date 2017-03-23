@@ -20,12 +20,45 @@
                     <view key="view" contentMode="scaleToFill" id="Vqd-sA-I0g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NMn-68-wxB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.16078431372549018" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dmg-3O-vBQ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rSB-3M-9NI">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="lLZ-KI-9ui" id="Iiu-Wo-0ed"/>
+                                    <outlet property="delegate" destination="lLZ-KI-9ui" id="wlg-Vt-hou"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="0.15686274510000001" green="0.16078431369999999" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="idc-3D-eSi" firstAttribute="top" secondItem="NMn-68-wxB" secondAttribute="bottom" id="4Sa-OM-Bmq"/>
+                            <constraint firstItem="NMn-68-wxB" firstAttribute="top" secondItem="Vqd-sA-I0g" secondAttribute="top" id="GGY-RM-xpN"/>
+                            <constraint firstAttribute="trailing" secondItem="NMn-68-wxB" secondAttribute="trailing" id="GMs-e2-1a4"/>
+                            <constraint firstItem="NMn-68-wxB" firstAttribute="leading" secondItem="Vqd-sA-I0g" secondAttribute="leading" id="Qcc-Ch-ENT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="a0s-En-nsg">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="bL5-SV-ofW"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="feedCollectionView" destination="NMn-68-wxB" id="Ba8-z4-HJ1"/>
                         <outlet property="menuBarButtonItem" destination="bL5-SV-ofW" id="dLA-od-AVc"/>
                     </connections>
                 </viewController>
@@ -38,7 +71,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dXi-Rw-VHV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4eP-SY-xdr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4eP-SY-xdr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

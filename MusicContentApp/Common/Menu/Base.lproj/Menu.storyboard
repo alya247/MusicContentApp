@@ -99,6 +99,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.08235294118" green="0.086274509799999996" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="sLX-6e-dmr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="qCc-VT-7ET"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="94t-AB-jEK" style="IBUITableViewCellStyleDefault" id="mW0-eQ-cre">
                                         <rect key="frame" x="0.0" y="193" width="375" height="44"/>
@@ -183,6 +186,14 @@
             <point key="canvasLocation" x="696.79999999999995" y="150.67466266866569"/>
         </scene>
         <!--MainScreen-->
+        <scene sceneID="5Kb-hi-j1N">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainScreen" id="sLX-6e-dmr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="674-4l-GqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1381" y="-101"/>
+        </scene>
+        <!--MainScreen-->
         <scene sceneID="2nR-AQ-Qgc">
             <objects>
                 <viewControllerPlaceholder storyboardName="MainScreen" id="SDo-7O-nBN" sceneMemberID="viewController"/>
@@ -196,7 +207,7 @@
                 <viewControllerPlaceholder storyboardName="Search" id="0iA-Jp-pej" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cc3-d5-Ewn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="891"/>
+            <point key="canvasLocation" x="697" y="651"/>
         </scene>
         <!--Artist-->
         <scene sceneID="aZG-AZ-uCf">

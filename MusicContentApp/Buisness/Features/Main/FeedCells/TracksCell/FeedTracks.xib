@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="feedTracksCell" id="TAE-1p-Und" customClass="FeedTracksCollectionViewCell" customModule="MusicContentApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2Pe-Rd-WnR">
+                        <rect key="frame" x="0.0" y="37" width="375" height="101"/>
+                        <color key="backgroundColor" red="0.094102360308170319" green="0.09412645548582077" blue="0.094100810587406158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="rKb-xE-Bmg">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP TRACKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjI-Bp-sCY">
+                        <rect key="frame" x="19" y="9" width="102" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" id="9vJ-Lt-tsg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.53725490200000003" green="0.53725490200000003" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cjI-Bp-sCY" firstAttribute="leading" secondItem="TAE-1p-Und" secondAttribute="leading" constant="19" id="8OZ-bj-ZY7"/>
+                <constraint firstItem="2Pe-Rd-WnR" firstAttribute="top" secondItem="cjI-Bp-sCY" secondAttribute="bottom" constant="7" id="8vE-Qx-kp0"/>
+                <constraint firstItem="2Pe-Rd-WnR" firstAttribute="leading" secondItem="TAE-1p-Und" secondAttribute="leading" id="MpN-iR-50L"/>
+                <constraint firstAttribute="bottom" secondItem="2Pe-Rd-WnR" secondAttribute="bottom" id="NNr-Uk-qgS"/>
+                <constraint firstItem="cjI-Bp-sCY" firstAttribute="top" secondItem="TAE-1p-Und" secondAttribute="top" constant="9" id="S3i-WN-DHv"/>
+                <constraint firstAttribute="trailing" secondItem="2Pe-Rd-WnR" secondAttribute="trailing" id="lwW-gf-fW0"/>
+            </constraints>
+            <connections>
+                <outlet property="tracksCollectionView" destination="2Pe-Rd-WnR" id="yem-Qs-LYg"/>
+            </connections>
+            <point key="canvasLocation" x="-168.5" y="23"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -115,7 +115,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 12 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 16 nibs.
   struct nib {
     /// Nib `AlbumDetail`.
     static let albumDetail = _R.nib._AlbumDetail()
@@ -133,6 +133,14 @@ struct R: Rswift.Validatable {
     static let artistDetTrack = _R.nib._ArtistDetTrack()
     /// Nib `ArtistPhoto`.
     static let artistPhoto = _R.nib._ArtistPhoto()
+    /// Nib `Artist`.
+    static let artist = _R.nib._Artist()
+    /// Nib `ArtistsFeed`.
+    static let artistsFeed = _R.nib._ArtistsFeed()
+    /// Nib `FeedTrack`.
+    static let feedTrack = _R.nib._FeedTrack()
+    /// Nib `FeedTracks`.
+    static let feedTracks = _R.nib._FeedTracks()
     /// Nib `Related`.
     static let related = _R.nib._Related()
     /// Nib `SearchCell`.
@@ -150,6 +158,11 @@ struct R: Rswift.Validatable {
     /// `UINib(name: "AlbumImage", in: bundle)`
     static func albumImage(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.albumImage)
+    }
+    
+    /// `UINib(name: "Artist", in: bundle)`
+    static func artist(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.artist)
     }
     
     /// `UINib(name: "ArtistAlbums", in: bundle)`
@@ -182,6 +195,21 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.artistPhoto)
     }
     
+    /// `UINib(name: "ArtistsFeed", in: bundle)`
+    static func artistsFeed(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.artistsFeed)
+    }
+    
+    /// `UINib(name: "FeedTrack", in: bundle)`
+    static func feedTrack(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.feedTrack)
+    }
+    
+    /// `UINib(name: "FeedTracks", in: bundle)`
+    static func feedTracks(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.feedTracks)
+    }
+    
     /// `UINib(name: "Related", in: bundle)`
     static func related(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.related)
@@ -205,7 +233,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 12 reuse identifiers.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 16 reuse identifiers.
   struct reuseIdentifier {
     /// Reuse identifier `albumDetailCell`.
     static let albumDetailCell: Rswift.ReuseIdentifier<AlbumDetCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "albumDetailCell")
@@ -213,6 +241,8 @@ struct R: Rswift.Validatable {
     static let albumImageCell: Rswift.ReuseIdentifier<AlbumImageCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "albumImageCell")
     /// Reuse identifier `artistAlbumCell`.
     static let artistAlbumCell: Rswift.ReuseIdentifier<ArtistAlbumsCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "artistAlbumCell")
+    /// Reuse identifier `artistCell`.
+    static let artistCell: Rswift.ReuseIdentifier<ArtistCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "artistCell")
     /// Reuse identifier `artistDetAlbumsCell`.
     static let artistDetAlbumsCell: Rswift.ReuseIdentifier<ArtistDetAlbumsCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "artistDetAlbumsCell")
     /// Reuse identifier `artistDetRelatedCell`.
@@ -223,6 +253,12 @@ struct R: Rswift.Validatable {
     static let artistDetTrackCell: Rswift.ReuseIdentifier<ArtistDetTrackCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "artistDetTrackCell")
     /// Reuse identifier `artistPhoto`.
     static let artistPhoto: Rswift.ReuseIdentifier<ArtistPhotoCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "artistPhoto")
+    /// Reuse identifier `artistsFeed`.
+    static let artistsFeed: Rswift.ReuseIdentifier<ArtistsFeedCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "artistsFeed")
+    /// Reuse identifier `feedTrackCell`.
+    static let feedTrackCell: Rswift.ReuseIdentifier<FeedTrackCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "feedTrackCell")
+    /// Reuse identifier `feedTracksCell`.
+    static let feedTracksCell: Rswift.ReuseIdentifier<FeedTracksCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "feedTracksCell")
     /// Reuse identifier `relatedCell`.
     static let relatedCell: Rswift.ReuseIdentifier<RelatedCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "relatedCell")
     /// Reuse identifier `searchCell`.
@@ -612,6 +648,7 @@ struct _R: Rswift.Validatable {
   struct nib: Rswift.Validatable {
     static func validate() throws {
       try _Track.validate()
+      try _FeedTrack.validate()
       try _ShortBio.validate()
     }
     
@@ -638,6 +675,20 @@ struct _R: Rswift.Validatable {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> AlbumImageCollectionViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? AlbumImageCollectionViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _Artist: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = ArtistCollectionViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "artistCell"
+      let name = "Artist"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> ArtistCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ArtistCollectionViewCell
       }
       
       fileprivate init() {}
@@ -722,6 +773,52 @@ struct _R: Rswift.Validatable {
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> ArtistPhotoCollectionViewCell? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ArtistPhotoCollectionViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _ArtistsFeed: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = ArtistsFeedCollectionViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "artistsFeed"
+      let name = "ArtistsFeed"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> ArtistsFeedCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ArtistsFeedCollectionViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _FeedTrack: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
+      typealias ReusableType = FeedTrackCollectionViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "feedTrackCell"
+      let name = "FeedTrack"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> FeedTrackCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedTrackCollectionViewCell
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "play") == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'play' is used in nib 'FeedTrack', but couldn't be loaded.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _FeedTracks: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = FeedTracksCollectionViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "feedTracksCell"
+      let name = "FeedTracks"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> FeedTracksCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? FeedTracksCollectionViewCell
       }
       
       fileprivate init() {}

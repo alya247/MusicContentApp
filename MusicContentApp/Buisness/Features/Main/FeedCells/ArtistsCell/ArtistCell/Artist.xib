@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="artistCell" id="JdW-S7-Kpm" customClass="ArtistCollectionViewCell" customModule="MusicContentApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="278"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="278"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EV-8Y-bDN">
+                        <rect key="frame" x="11" y="0.0" width="222" height="278"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljX-8u-V5x">
+                                <rect key="frame" x="8" y="242" width="48.5" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="SgU-oA-BZd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18439239263534546" green="0.18039008975028992" blue="0.18031880259513855" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ljX-8u-V5x" firstAttribute="top" secondItem="4EV-8Y-bDN" secondAttribute="top" constant="242" id="8xa-lw-9D9"/>
+                            <constraint firstItem="ljX-8u-V5x" firstAttribute="leading" secondItem="4EV-8Y-bDN" secondAttribute="leading" constant="8" id="Yp3-1s-Tu1"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ljw-2d-I7L">
+                        <rect key="frame" x="0.0" y="32" width="156" height="196"/>
+                    </imageView>
+                    <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31l-os-xDe">
+                        <rect key="frame" x="100" y="15" width="113" height="118"/>
+                        <color key="backgroundColor" red="0.094102360308170319" green="0.09412645548582077" blue="0.094100810587406158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.15686274509803921" green="0.16078431372549018" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4EV-8Y-bDN" secondAttribute="trailing" id="2Mt-L0-poS"/>
+                <constraint firstItem="31l-os-xDe" firstAttribute="leading" secondItem="JdW-S7-Kpm" secondAttribute="leading" constant="100" id="82m-XF-TnW"/>
+                <constraint firstItem="4EV-8Y-bDN" firstAttribute="top" secondItem="JdW-S7-Kpm" secondAttribute="top" id="CTU-JR-UgQ"/>
+                <constraint firstAttribute="bottom" secondItem="31l-os-xDe" secondAttribute="bottom" constant="145" id="LFn-v1-dp2"/>
+                <constraint firstAttribute="bottom" secondItem="4EV-8Y-bDN" secondAttribute="bottom" id="N6f-Jd-XYo"/>
+                <constraint firstItem="31l-os-xDe" firstAttribute="top" secondItem="JdW-S7-Kpm" secondAttribute="top" constant="15" id="NJl-AK-6hm"/>
+                <constraint firstItem="Ljw-2d-I7L" firstAttribute="top" secondItem="JdW-S7-Kpm" secondAttribute="top" constant="32" id="ThE-Zw-xgD"/>
+                <constraint firstItem="Ljw-2d-I7L" firstAttribute="leading" secondItem="JdW-S7-Kpm" secondAttribute="leading" id="bSg-Qw-0LX"/>
+                <constraint firstAttribute="bottom" secondItem="Ljw-2d-I7L" secondAttribute="bottom" constant="50" id="gYC-2x-NUy"/>
+                <constraint firstAttribute="trailing" secondItem="Ljw-2d-I7L" secondAttribute="trailing" constant="77" id="idh-Uz-MXo"/>
+                <constraint firstAttribute="trailing" secondItem="31l-os-xDe" secondAttribute="trailing" constant="20" id="jdW-R0-Tid"/>
+                <constraint firstItem="4EV-8Y-bDN" firstAttribute="leading" secondItem="JdW-S7-Kpm" secondAttribute="leading" constant="11" id="rp1-Ww-Mfu"/>
+            </constraints>
+            <connections>
+                <outlet property="albumImageView" destination="Ljw-2d-I7L" id="VV4-l7-vmK"/>
+                <outlet property="nameLabel" destination="ljX-8u-V5x" id="HWN-sa-Nrn"/>
+            </connections>
+            <point key="canvasLocation" x="-185.5" y="20"/>
+        </collectionViewCell>
+    </objects>
+</document>
